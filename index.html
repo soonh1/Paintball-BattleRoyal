@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Odense Paintball - tablet</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-    <h1>test</h1>
-    <h1>fasdsa</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .container {
+      width: 100%;
+    }
+    .col {
+      margin: 20px 0 20px 30px;
+      height: 95vh;
+      padding: 0;
+    }
+    .col1 {
+      margin: 20px 0 20px 0;
+      height: 95vh;
+      width: 30%;
+    }
+    .team {
+      height: 45vh;
+      margin-bottom: 5vh;
+    }
+    .key {
+      height: 45vh;
+    }
+    .titleBar {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: white;
+      text-align: center;
+      background-color: rgb(63, 56, 56);
+      height: 45px;
+    }
+    .teamImg {
+      background-image: url("/img/dnKlJZr-_400x400.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 40vh;
+      cursor: pointer;
+    }
+    .keyImg {
+      background-image: url("/img/Loot-Crate-Rocket-League.jpg");
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;
+      height: 40vh;
+      cursor: pointer;
+    }
+    .mapImg {
+      background-image: url("/img/2010-mobile.jpg");
+      background-repeat: no-repeat;
+      background-position: 60%;
+      background-size: cover;
+      height: 90vh;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <div class="team">
+            <div class="titleBar">
+              TEAM
+            </div>
+            <div class="teamImg"></div>
+          </div>
+          <div class="key">
+            <div class="titleBar">
+              KEY
+            </div>
+            <div class="keyImg"></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="titleBar">
+            MAP
+          </div>
+          <div class="mapImg"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
