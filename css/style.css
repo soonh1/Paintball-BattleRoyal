@@ -1,0 +1,137 @@
+.container {
+    width: 100%;
+  }
+  .col {
+    margin: 20px 0 20px 30px;
+    height: 95vh;
+    padding: 0;
+  }
+  .col1 {
+    margin: 20px 0 20px 0;
+    height: 95vh;
+    width: 30%;
+  }
+  .team {
+    height: 45vh;
+    margin-bottom: 5vh;
+  }
+  .key {
+    height: 45vh;
+  }
+  .titleBar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    background-color: rgb(63, 56, 56);
+    height: 45px;
+  }
+  .teamImg {
+    background-image: url("../img/dnKlJZr-_400x400.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    cursor: pointer;
+  }
+  .keyImg {
+    background-image: url("../img/Loot-Crate-Rocket-League.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 39vh;
+    cursor: pointer;
+  }
+  #mapImg {
+    background-image: url("../img/2010-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 60%;
+    background-size: cover;
+    height: 89vh;
+    cursor: pointer;
+  }
+
+  /*testing*/
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    background-color: rgb(63, 56, 56);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  #main {
+    transition: transform 0.25s ease;
+  }
+
+  .wideMap {
+    background-color: gray;
+    margin: 80px 0 0px 0;
+    height: 89vh;
+    width: 70%;
+    float: left;
+    border: 20px solid white;
+  }
+
+  .wideMapEvent {
+    background-color: #384D57;
+    margin: 80px 0 0px 0;
+    height: 89vh;
+    float: left;
+    width: 30%;
+    border: 20px solid white;
+  }
+
+  .eventBox{
+    background-color: red;
+    width: 100%;
+  }
