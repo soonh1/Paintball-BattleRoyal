@@ -55,15 +55,15 @@
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
-      height: 40vh;
+      height: 39vh;
       cursor: pointer;
     }
-    .mapImg {
+    #mapImg {
       background-image: url("/img/2010-mobile.jpg");
       background-repeat: no-repeat;
       background-position: 60%;
       background-size: cover;
-      height: 90vh;
+      height: 89vh;
       cursor: pointer;
     }
 
@@ -74,7 +74,7 @@
       position: fixed;
       z-index: 1;
       right: 0;
-      background-color: #111;
+      background-color: rgb(63, 56, 56);
       overflow-x: hidden;
       transition: 0.5s;
     }
@@ -125,16 +125,30 @@
     }
 
     #main {
-      transition: margin-left 0.5s;
-      padding: 16px;
+      transition: transform 0.25s ease;
     }
 
     .wideMap {
-      background-color: red;
+      background-color: gray;
       margin: 80px 0 0px 0;
       height: 89vh;
-      width: 60%;
-      border: 10px solid white;
+      width: 70%;
+      float: left;
+      border: 20px solid white;
+    }
+
+    .wideMapEvent {
+      background-color: #384D57;
+      margin: 80px 0 0px 0;
+      height: 89vh;
+      float: left;
+      width: 30%;
+      border: 20px solid white;
+    }
+
+    .eventBox{
+      background-color: red;
+      width: 100%;
     }
   </style>
   <body>
@@ -154,18 +168,23 @@
             <div class="keyImg"></div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" id="main">
           <div class="titleBar">
             MAP
           </div>
-          <div class="mapImg" onclick="openNav()" id="main"></div>
+          <div id="mapImg" onclick="openNav()"></div>
         </div>
 
         <!--Mappen som kommer frem fra højre til ventre-->
         <div id="mySidebar" class="sidebar">
           <p>MAP</p>
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a >
-          <div class="wideMap"></div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          <div class="wideMap" id="mapImg"></div>
+          <div class="wideMapEvent">
+            <div class="eventBox">Armsdealer</div>
+          </div>
         </div>
       </div>
     </div>
@@ -173,12 +192,12 @@
   <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "100%";
-      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("main").style.transform = "scale(0.9)";
     }
 
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("main").style.transform = "scale(1)";
     }
   </script>
 </html>
